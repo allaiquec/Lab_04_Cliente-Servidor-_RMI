@@ -1,0 +1,9 @@
+import java.rmi.Remote;
+
+public interface MedicineInterface extends Remote {
+    public Medicine getMedicine(int amount) throws Exception;
+    public int getStock() throws Exception;
+    public String print() throws Exception;
+    public String getName() throws Exception;
+    public float getPrice() throws Exception;
+}
